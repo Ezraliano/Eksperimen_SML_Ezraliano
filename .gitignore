@@ -1,0 +1,5 @@
+# Ignore MLflow runs and outputs
+mlruns/
+mlartifacts/
+outputs/
+classification_report.json 
