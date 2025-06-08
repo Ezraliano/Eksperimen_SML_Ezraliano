@@ -3,3 +3,11 @@ mlruns/
 mlartifacts/
 outputs/
 classification_report.json 
+Screenshot_artifak.png
+Screenshot_dashboard.png
+modeling_to_dags.py
+DagsHub.txt
+requirements.txt
+Workflow-CI.txt
+prometheus-3.2.1.windows-amd64
+Monitoring dan Logging

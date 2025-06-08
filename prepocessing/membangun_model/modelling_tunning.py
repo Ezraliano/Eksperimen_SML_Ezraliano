@@ -48,12 +48,12 @@ y_pred = best_model.predict(X_test_scaled)
 acc = accuracy_score(y_test, y_pred)
 report = classification_report(y_test, y_pred, output_dict=True)
 
-# PERBAIKAN UNTUK LOG ARTIFACT 
-# 1. Buat direktori untuk menyimpan output/artifact
+
+
 output_dir = "outputs"
 os.makedirs(output_dir, exist_ok=True)
 
-# 2. Simpan classification report ke dalam direktori tersebut
+
 report_path = os.path.join(output_dir, 'classification_report.json')
 with open(report_path, 'w') as f:
     json.dump(report, f, indent=2)
@@ -65,7 +65,7 @@ with mlflow.start_run():
     # Log metrik utama
     mlflow.log_metric('accuracy', acc)
 
-    # 3. Gunakan mlflow.log_artifacts() untuk me-log seluruh direktori
+    
     mlflow.log_artifacts(output_dir)
 
     # Log model

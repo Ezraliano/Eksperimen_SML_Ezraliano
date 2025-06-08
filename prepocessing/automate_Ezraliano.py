@@ -52,8 +52,3 @@ def load_and_preprocess_dataset(csv_path, test_size=0.2, random_state=42):
         'scaler': scaler
     }
 
-# Contoh penggunaan:
-# result = load_and_preprocess_dataset('Crop_recommendation.csv')
-# result['full_preprocessed'].to_csv('Crop_recommendation_clean.csv', index=False)
-# result['train'].to_csv('data_train.csv', index=False)
-# result['test'].to_csv('data_test.csv', index=False) 
