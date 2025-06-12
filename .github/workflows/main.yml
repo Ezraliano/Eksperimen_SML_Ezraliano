@@ -25,7 +25,7 @@ jobs:
 
       - name: Jalankan preprocessing otomatis
         run: |
-          python preprocessing/automate_Ezraliano.py # <-- PERBAIKI TYPO DI SINI!
+          python prepocessing/automate_Ezraliano.py
 
       - name: Upload hasil dataset
         uses: actions/upload-artifact@v4
