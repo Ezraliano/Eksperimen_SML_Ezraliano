@@ -23,9 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy scikit-learn
 
-      - name: Jalankan preprocessing otomatis
-        run: |
-          python prepocessing/automate_Ezraliano.py
+      - name: Run Preprocessing Script
+        run: python prepocessing/automate_Ezraliano.py
 
       - name: Upload hasil dataset
         uses: actions/upload-artifact@v4
