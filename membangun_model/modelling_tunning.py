@@ -15,7 +15,7 @@ mlflow.set_tracking_uri("http://localhost:5000")
 print("MLflow tracking URI diatur ke: http://localhost:5000")
 
 # Load data hasil preprocessing
-DATA_PATH = 'prepocessing/membangun_model/Crop_recommendation_prepocessing.csv'
+DATA_PATH = 'prepocessing/Crop_recommendation_prepocessing.csv'
 df = pd.read_csv(DATA_PATH)
 
 # Pisahkan fitur dan target

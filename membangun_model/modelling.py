@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, accuracy_score
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.sklearn.autolog()
 
-DATA_PATH = 'prepocessing/membangun_model/Crop_recommendation_prepocessing.csv'
+DATA_PATH = 'prepocessing/Crop_recommendation_prepocessing.csv'
 df = pd.read_csv(DATA_PATH, index_col=0)
 
 
