@@ -23,11 +23,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy scikit-learn
 
-      - name: Run Preprocessing Script
-        run: python prepocessing/automate_Ezraliano.py
+      - name: Jalankan preprocessing otomatis
+        run: |
+          python preprocessing/automate_Ezraliano.py # <-- PERBAIKI TYPO DI SINI!
 
       - name: Upload hasil dataset
         uses: actions/upload-artifact@v4
         with:
-          name: crop-recommendation-prepocessing
-          path: Crop_recommendation_prepocessing.csv
+          name: crop-recommendation-clean
+          path: Crop_recommendation_prepocessing.csv 
