@@ -45,20 +45,13 @@ def load_and_preprocess_dataset(csv_path, test_size=0.2, random_state=42):
 
 # Tambahkan bagian ini untuk menjalankan fungsi dan menyimpan hasilnya
 if __name__ == "__main__":
-    # Ganti path ini dengan path sebenarnya ke Crop_recommendation.csv
-    # Asumsi Crop_recommendation.csv ada di root repositori
-    # Jika tidak, sesuaikan path ini:
-    # Misalnya, jika Crop_recommendation.csv ada di 'data/Crop_recommendation.csv'
-    # original_csv_path = 'data/Crop_recommendation.csv'
-    original_csv_path = 'Crop_recommendation.csv' # Asumsi berada di root proyek
+    original_csv_path = 'Crop_recommendation.csv' 
     
-    # Perhatikan bahwa Anda juga perlu memastikan original_csv_path tersedia di runner GitHub Actions.
-    # Jika file ini tidak ada di root, checkout actions Anda harus menangani itu.
 
     processed_data = load_and_preprocess_dataset(original_csv_path)
 
     # Simpan dataset yang sudah diproses penuh ke CSV
     # Nama file ini harus cocok dengan 'path' di upload-artifact workflow
-    output_filename = "Crop_recommendation_clean.csv"
+    output_filename = "Crop_recommendation_prepocessing.csv"
     processed_data['full_preprocessed'].to_csv(output_filename, index=False)
     print(f"Dataset preprocessed saved to {output_filename}")

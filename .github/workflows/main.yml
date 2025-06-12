@@ -25,10 +25,10 @@ jobs:
 
       - name: Jalankan preprocessing otomatis
         run: |
-          python preprocessing/automate_Ezraliano.py
+          python prepocessing/automate_Ezraliano.py
 
       - name: Upload hasil dataset
         uses: actions/upload-artifact@v4
         with:
-          name: crop-recommendation-clean
-          path: Crop_recommendation_clean.csv
+          name: crop-recommendation-prepocessing
+          path: Crop_recommendation_prepocessing.csv
