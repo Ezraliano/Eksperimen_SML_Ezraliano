@@ -45,7 +45,7 @@ def load_and_preprocess_dataset(csv_path, test_size=0.2, random_state=42):
 
 # Tambahkan bagian ini untuk menjalankan fungsi dan menyimpan hasilnya
 if __name__ == "__main__":
-    original_csv_path = 'Crop_recommendation.csv' 
+    original_csv_path = 'Crop_recommendation_prepocessing.csv' 
     
 
     processed_data = load_and_preprocess_dataset(original_csv_path)
